@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="14"
         android:targetSdkVersion="17" />
 
     <application
@@ -16,11 +16,6 @@
         <activity
             android:name="com.example.mapsv2.MainActivity"
             android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <meta-data
@@ -30,6 +25,21 @@
         <activity
             android:name="com.example.mapsv2.RecieveData"
             android:label="@string/title_activity_recieve_data" >
+        </activity>
+        <activity
+            android:name="com.example.mapsv2.EventList"
+            android:label="@string/title_activity_event_list" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.mapsv2.CreateEventActivity"
+            android:label="@string/title_activity_create_event"
+            android:parentActivityName="com.example.mapsv2.EventList">
+            
         </activity>
     </application>
 

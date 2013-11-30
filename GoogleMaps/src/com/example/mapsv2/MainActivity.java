@@ -32,7 +32,8 @@ public class MainActivity extends FragmentActivity {
 	}
 
 	void transit(LatLng point) {
-		Intent intent = new Intent(this, RecieveData.class);
+		Intent intent = new Intent(this, CreateEventActivity.class);
+		intent.putExtra("previousActivity", "mapActivity");
 		intent.putExtra("latitude", point.latitude);
 		intent.putExtra("longitude", point.longitude);
 		MainActivity.this.startActivity(intent);
