@@ -74,7 +74,7 @@ public class CreateEventActivity extends Activity implements OnClickListener {
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.event_location:
-			Intent i = new Intent(context, MainActivity.class);
+			Intent i = new Intent(context, MapActivity.class);
 			CreateEventActivity.this.startActivity(i);
 			break;
 

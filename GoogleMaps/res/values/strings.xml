@@ -13,4 +13,6 @@
 	<string name="event_location_hint">Pick Location</string>
 	<string name="pick_date_hint">Pick Date</string>
 	<string name="pick_time_hint">Pick Time</string>
+	<string name="search_hint">Search</string>
+	<string name="current_location">Current Location</string>
 </resources>
