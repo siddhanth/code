@@ -51,6 +51,10 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.example.mapsv2.PushActivity"
+            android:label="@string/title_activity_push_event" >
+        </activity>
+        <activity
             android:name="com.example.mapsv2.CreateEventActivity"
             android:label="@string/title_activity_create_event"
             android:parentActivityName="com.example.mapsv2.EventList">

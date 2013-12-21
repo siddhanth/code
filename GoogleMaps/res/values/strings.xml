@@ -7,6 +7,7 @@
     <string name="title_activity_recieve_data">RecieveData</string>
     <string name="title_activity_event_list">EventList</string>
     <string name="title_activity_create_event">CreateEventActivity</string>
+    <string name="title_activity_push_event">PushActivity</string>
     <string name="history">History</string>
 	<string name="create_event">CreateEvent</string>
 	<string name="event_name">Event Name</string>
