@@ -24,16 +24,16 @@ package com.example.database;
 import java.io.InputStream;
 import java.util.List;
 
-import com.example.mapsv2.R;
-import com.example.util.SqlScriptReader;
-import com.example.util.Utilities;
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
-import net.sqlcipher.database.SQLiteDatabase;
-import net.sqlcipher.database.SQLiteOpenHelper;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+import com.example.mapsv2.R;
+import com.example.util.SqlScriptReader;
+import com.example.util.Utilities;
 
 public class CustomDbAdapter implements DatabaseManager {
 	private Context mCtx;
@@ -106,7 +106,7 @@ public class CustomDbAdapter implements DatabaseManager {
 		if (mDb == null) {
 			Utilities.info("GETTING WRITABLE CONNECTION...");
 			//mDb = mDbHelper.getWritableDatabase();
-			mDb = mDbHelper.getWritableDatabase("@!De@!m@ker");
+			mDb = mDbHelper.getWritableDatabase();
 			
 		}
 		return this;
