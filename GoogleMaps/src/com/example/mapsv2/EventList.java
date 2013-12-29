@@ -3,7 +3,6 @@ package com.example.mapsv2;
 import java.text.ParseException;
 import java.util.ArrayList;
 
-import net.sqlcipher.database.SQLiteDatabase;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
@@ -25,7 +24,6 @@ public class EventList extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.event_list);
-		SQLiteDatabase.loadLibs(this);
 		CustomDbAdapter dbManager = CustomDbAdapter.getInstance(getBaseContext());
 		EventListHelper eventListData = new EventListHelper(dbManager);
 		ArrayList<Events> eventDetails=null;
